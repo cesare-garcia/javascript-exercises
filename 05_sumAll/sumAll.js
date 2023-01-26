@@ -6,6 +6,8 @@ const sumAll = function( starting_int, ending_int ) {
 
     if ( starting_int < 0 || ending_int < 0 ) {
         return "ERROR";
+    } else if ( typeof starting_int != 'number' || typeof ending_int != 'number') {
+        return "ERROR";
     }
 
     if ( ending_int > starting_int ) {
